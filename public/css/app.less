@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #314D5B;
+}
+
+.users-edit {
+  background: #314D5B;
+  width: 560px;
+  box-shadow: 0 0 20px rgba(30, 30, 30, .5);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -280px;
+  transition: opacity .3s, margin-top .5s;
+  z-index: 10;
+
+  &.users-edit-hidden {
+    opacity: 0;
+    margin-top: -600px;
+  }
+
+  h2 {
+    padding: 20px 0 0 ;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Segoe UI",sans-serif;
+  }
+}
+.name {
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+.form__title {
+  margin: 0 0 20px 0 ;
+  background: #253A47;
+  height: 70px;
+  width: 100%;
+}
+
+.form__field {
+  padding: 0 20px ;
+}
+
+.form__footer {
+  background: #349886;
+}
+
+.field-row {
+  margin-bottom: 15px;
+  span {
+    color: #DA4B46;
+  }
+  select {
+    border-radius: 4px;
+    height: 25px;
+    background: #466d81;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    border: 1px solid #21323E;
+  }
+
+  > label {
+    width: 110px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  > input {
+    width: 345px;
+  }
+
+  > textarea {
+    display: block;
+    width: 500px;
+    height: 100px;
+  }
+
+  > input,
+  > textarea {
+    border-radius: 4px;
+    padding: 4px 15px;
+    border: 1px solid #21323E;
+    outline: none;
+    color: #ffffff;
+    background: #466d81;
+    resize: none;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+  }
+}
+
+.btn {
+  color: #ffffff;
+  margin: 10px 0 7px 100px;
+  padding: 4px 20px;
+  border: none;
+  transition: background .3s;
+  cursor: pointer;
+
+  &.btn-new {
+    background: #41BEA8;
+
+    &:hover {
+      background: #2A7A6B;
+    }
+  }
+
+  &.btn-save,
+  &.btn-cancel {
+    background: #41BEA8;
+    color: #ffffff;
+    font-weight: 600;
+
+    &:hover {
+      background: #2A7A6B;
+    }
+  }
+}
+
+#users-table {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  tr:nth-child(even) {
+    background: #eee;
+  }
+  th {
+    text-transform: uppercase;
+    height: 30px;
+    text-align: center;
+  }
+  td {
+    padding: 2px 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #37c;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  .remove {
+    background: #E75454;
+    &:hover {
+      background: #E75411;
+    }
+  }
+
+}
+
+.price_name {
+  padding-left: 40px;
+}
